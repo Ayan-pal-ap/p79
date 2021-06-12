@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            p77
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<img id="picture" src="F pic.jpg">
+<h4 id="image">Picture</h4>
+<button onclick="Next()"> Next</button>  
+    </body>
+    <script>
+       var ary_1=["https://image.shutterstock.com/image-vector/smiling-girl-600w-160598192.jpg","https://image.shutterstock.com/image-vector/happy-man-pointing-finger-blank-600w-1791264743.jpg"];
+       var ary_2=["mom","dad"];
+        var i=0;
+        function Next()
+        {
+        i++;
+        
+        if (i>2)
+        {
+            i=0;
+        }
+        var ary_01=ary_1[i];
+        var ary_012=ary_2[i];
+        document.getElementById("picture").src=ary_01;
+        document.getElementById("image").innerHTML=ary_012;
+        console.log(ary_01);
+        
+    }
+
+    </script>
+</html> 
